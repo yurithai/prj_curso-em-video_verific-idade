@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Verificar</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Verificando Idades</h1>
+    </header>
+
+    <main class="wrapper">
+        <section id="msg">
+            <label>
+                Ano de Nascimento: 
+                <input type="number" id="txtano"/>
+            </label>
+            <p>
+                Sexo:
+
+                <input type="radio" id="masc" name="radsex" checked/>
+                <label for="masc">Masculino</label>
+                
+                <input type="radio" id="fem" name="radsex"/>
+                <label for="fem">Feminino</label>
+            </p>
+            <input id="verific" type="button" value="Verificar" onclick="calcular()">
+        </section>
+
+        <section id="res">
+            Verificando...
+        </section>
+    </main>
+    
+</body>
+
+<footer>
+    <p>&copy; Thay's Vídeoss</p>
+</footer>
+
+<script src="script.js"></script>
+</html>
+
